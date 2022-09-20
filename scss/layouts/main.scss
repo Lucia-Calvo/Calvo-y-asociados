@@ -1,0 +1,140 @@
+#index-1{
+    background-color: $primary-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-up(sm){
+        width: 100vw;
+    }
+    .img-1{
+        height: 400px;
+        width: 300px;
+        position: absolute;
+        top: 30%;
+        left: 100px;
+        @include media-up(sm){
+            height: 450px;
+            width: 350px;
+            position: absolute;
+            top: 30%;
+            left: 190px;
+        }
+        @include media-up(md){
+            height: 470px;
+            width: 370px;
+            position: absolute;
+            top: 28%;
+            left: 200px;
+        }
+        @include media-up(xl){
+            height: 500px;
+            width: 420px;
+            position: absolute;
+            top: 18%;
+            left: 65%;
+        }
+    }    
+    .img-2{
+        height: 270px;
+        width: 210px;
+        position: absolute;
+        top: 25%;
+        right: 145px;
+        @include media-up(sm){
+            height: 300px;
+            width: 230px;
+            position: absolute;
+            top: 25%;
+            left: 90px;
+        }
+        @include media-up(md){
+            height: 320px;
+            width: 250px;
+            position: absolute;
+            top: 25%;
+            left: 100px;
+        }
+        @include media-up(xl){
+            height: 340px;
+            width: 270px;
+            position: absolute;
+            top: 12%;
+            left: 55%;
+        }
+    }
+    .container-1{
+        color: $text-color;       
+        letter-spacing: 2px;
+        position: absolute;
+        top: 10%;
+        @include media-up(xl){
+            width: fit-content;
+            top: 18%;
+            right: 50%;
+        }
+        H1{
+            font-family: $primary-typography;
+            font-size: 35px;
+            @include media-up(md){
+                font-size: 45px;
+            }
+            @include media-up(xl){
+                font-size: 55px;
+            }
+        }
+    }
+    .container-2{
+        color: $text-color;       
+        position: absolute;
+        top: 15%;
+        @include media-up(md){
+            top: 17%;
+        }
+        @include media-up(xl){
+            top: 25%;
+            right: 51%;
+        }
+        H2{
+            font-family: $primary-typography;
+            font-size: 25px;
+            @include media-up(md){
+                font-size: 28px;
+            }
+            @include media-up(xl){
+                font-size: 30px;
+            }
+        }
+    }
+    .article-1{     
+        position: absolute;
+        top: 90%;
+        text-align: center;
+        @include media-up (sm){
+            position: absolute;
+            top: 85%;
+        }
+        .p-1{
+            font-family: $secondary-typography;
+            font-size: 15px;
+            color: $text-color;
+            @include media-up(md){
+                font-size: 18px;
+            }
+            @include media-up(xl){
+                font-size: 20px;
+            }
+        }
+        .p-2{
+            font-family: $primary-typography;
+            font-size: 15px;
+            color: $secondary-color;
+            @include media-up(md){
+                font-size: 18px;
+            }
+            @include media-up(xl){
+                font-size: 20px;
+            }
+        }
+    }
+}
