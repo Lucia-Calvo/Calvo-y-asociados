@@ -6,6 +6,11 @@
     align-items: center;
     @include media-up(sm){
         width: 100vw;
+        height: 110vh;
+    }
+    @include media-up(md){
+        width: 100vw;
+        height: 110vh;
     }
     .img-1{
         height: 400px;
@@ -112,7 +117,7 @@
         text-align: center;
         @include media-up (sm){
             position: absolute;
-            top: 85%;
+            top: 98%;
         }
         .p-1{
             font-family: $secondary-typography;
@@ -136,5 +141,109 @@
                 font-size: 20px;
             }
         }
+    }
+}
+
+#index-2{
+    background-color: $primary-color;
+    height: fit-content;
+    div{
+        display: flex;
+        justify-content: center;
+        h3{
+            font-size: 18px;
+            font-family: $secondary-typography;
+            color: $text-color;
+            @include media-up (md){
+                font-size: 20px;
+            }
+            @include media-up (xl){
+                font-size: 23px;
+            }
+        }
+        .Resultados{
+            font-size: 20px;
+            font-family: $primary-typography;
+            color: $tertiary-color;
+            @include media-up (md){
+                font-size: 22px;
+            }
+            @include media-up (xl){
+                font-size: 25px;
+            }
+        }    
+    }
+    article{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+        p{
+            font-size: 12px;
+            font-family: $secondary-typography;
+            color: $text-color;
+            @include media-up (md){
+                font-size: 14px;
+            }
+            @include media-up (xl){
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+#index-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-up (md){
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    div{
+        text-align: center;
+        margin: 15px;
+        height: 2%;
+        padding: 10px 0px;
+        background-color: $primary-color;
+        @include media-up (md){
+            height: 450px;
+        }
+        @include media-up (xl){
+            height: 530px;
+        }
+    }
+    img{
+        height: 150px;
+    }
+    h5{
+        font-family: $primary-typography;
+        color: $text-color;
+        font-size: 18px;
+        @include media-up (md){
+            font-size: 20px;
+        }
+        @include media-up (xl){
+            font-size: 25px;
+        }
+    }
+    p{
+        font-size: 12px;
+        font-family: $secondary-typography;
+        color: $text-color;
+        margin: 15px 0px;
+        @include media-up (md){
+            font-size: 12px;
+        }
+        @include media-up (xl){
+            font-size: 14px;
+        }
+    }
+    .btn-primary{
+        font-family: $secondary-typography;
     }
 }
