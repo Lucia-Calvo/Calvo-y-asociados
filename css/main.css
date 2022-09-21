@@ -244,7 +244,6 @@ header {
       #index-3 h5 {
         font-size: 25px; } }
   #index-3 p {
-    font-size: 12px;
     font-family: "Montserrat", sans-serif;
     color: white;
     margin: 15px 0px; }
@@ -256,6 +255,32 @@ header {
         font-size: 14px; } }
   #index-3 .btn-primary {
     font-family: "Montserrat", sans-serif; }
+
+#index-4 {
+  background-color: #0e1116;
+  height: max-content; }
+  #index-4 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    #index-4 article iframe {
+      width: auto;
+      height: 30vh; }
+      @media screen and (min-width: 1200px) {
+        #index-4 article iframe {
+          height: 45vh; } }
+    #index-4 article p {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      margin: 15px 10px;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        #index-4 article p {
+          font-size: 14px; } }
+      @media screen and (min-width: 1200px) {
+        #index-4 article p {
+          font-size: 16px; } }
 
 .footer {
   background-color: #0e1116;
