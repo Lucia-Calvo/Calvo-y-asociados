@@ -1,0 +1,11 @@
+.btn{
+    font-family: $secondary-typography;
+    color: $secondary-color;
+    position: absolute;
+    bottom: 3px;
+    right: 100px;
+    @include media-up (xl){
+        top: 480px;
+        right: 100px;  
+    }
+}

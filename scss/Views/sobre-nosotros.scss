@@ -1,0 +1,42 @@
+.sobre-nosotros-1{
+    background-color: $primary-color;
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        color: $text-color;
+        font-size: 22px;
+        font-family: $primary-typography;
+    }
+    h5{
+        color: $secondary-color;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: $primary-typography;
+        margin-bottom: 35px;
+    }
+}
+
+.sobre-nosotros-2{
+    background-color: $primary-color;
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 400px;
+      height:300px;
+      object-fit: cover;
+      object-position: center center;
+        
+    }
+    p{
+        color: $text-color;
+        text-align: center;
+        padding: 20px 25px;
+    }
+}

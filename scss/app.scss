@@ -1,8 +1,10 @@
-@import './colors.scss';
-@import './typography.scss';
+@import './Utilities/Variables/colors.scss';
+@import './Utilities/Variables/typography.scss';
 @import './base.scss';
-@import './media-queries.scss';
+@import './Utilities/media-queries.scss';
 @import './layouts/header.scss';
-@import './layouts/main.scss';
 @import './layouts/footer.scss';
-
+@import './layouts/buttom.scss';
+@import './layouts/card.scss';
+@import './Views/index.scss';
+@import './Views/sobre-nosotros.scss';

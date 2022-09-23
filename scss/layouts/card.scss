@@ -1,0 +1,42 @@
+.card{
+    text-align: center;
+    margin: 15px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    height: 2%;
+    padding: 10px 0px;
+    background-color: $text-color;
+    @include media-up (md){
+        height: 450px;
+    }
+    @include media-up (xl){
+        height: 530px;
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+}
+img{
+    height: 150px;
+}
+h5{
+    font-family: $primary-typography;
+    color: $primary-color;
+    font-size: 18px;
+    @include media-up (md){
+        font-size: 20px;
+    }
+    @include media-up (xl){
+        font-size: 25px;
+    }
+}
+p{
+    font-family: $secondary-typography;
+    color: $primary-color;
+    margin: 15px 0px;
+    @include media-up (md){
+        font-size: 12px;
+    }
+    @include media-up (xl){
+        font-size: 14px;
+    }
+}

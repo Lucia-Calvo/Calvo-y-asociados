@@ -12,6 +12,10 @@
         width: 100vw;
         height: 110vh;
     }
+    @include media-up(xl){
+        width: 100vw;
+        height: 115vh;
+    }
     .img-1{
         height: 400px;
         width: 300px;
@@ -70,9 +74,10 @@
     }
     .container-1{
         color: $text-color;       
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         position: absolute;
         top: 10%;
+
         @include media-up(xl){
             width: fit-content;
             top: 18%;
@@ -93,12 +98,15 @@
         color: $text-color;       
         position: absolute;
         top: 15%;
-        @include media-up(md){
+        left: 30%;
+        @include media-up(sm){
             top: 17%;
         }
+        @include media-up(md){
+            top: 18%;
+        }
         @include media-up(xl){
-            top: 25%;
-            right: 51%;
+            top: 28%;
         }
         H2{
             font-family: $primary-typography;
@@ -117,12 +125,16 @@
         text-align: center;
         @include media-up (sm){
             position: absolute;
-            top: 98%;
+            top: 102%;
+        }
+        @include media-up (xl){
+            position: absolute;
+            top: 88%;
         }
         .p-1{
             font-family: $secondary-typography;
             font-size: 15px;
-            color: $text-color;
+            color: $text-color;       
             @include media-up(md){
                 font-size: 18px;
             }
@@ -132,24 +144,39 @@
         }
         .p-2{
             font-family: $primary-typography;
-            font-size: 15px;
+            font-size: 14px;
             color: $secondary-color;
+            @include media-up(sm){
+                position: absolute;
+                top: 65%;
+            }
             @include media-up(md){
-                font-size: 18px;
+                font-size: 16px;
             }
             @include media-up(xl){
-                font-size: 20px;
+                font-size: 18px;
+                position: absolute;
+                top: 65%;
             }
         }
     }
 }
 
+
 #index-2{
     background-color: $primary-color;
-    height: fit-content;
+    height: max-content;
+    border-bottom: 1px $text-color solid;
     div{
         display: flex;
         justify-content: center;
+        padding: 60px 10px 0px 10px;
+        @include media-up (sm){
+            padding: 45px 10px 0px 10px;
+        }
+        @include media-up (xl){
+            padding: 200px 10px 0px 10px;
+        }
         h3{
             font-size: 18px;
             font-family: $secondary-typography;
@@ -177,7 +204,11 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 10px 20px 10px 20px;
+        padding: 15px 25px 40px 15px;
+        @include media-up (xl){
+            padding: 15px 25px 190px 15px; 
+        }
+
         p{
             font-size: 12px;
             font-family: $secondary-typography;
@@ -193,10 +224,12 @@
 }
 
 #index-3{
+    background-color: $primary-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px $text-color solid;
     @include media-up (md){
         display: flex;
         flex-direction: row;
@@ -204,47 +237,7 @@
         flex-wrap: wrap;
         align-items: center;
     }
-    div{
-        text-align: center;
-        margin: 15px;
-        height: 2%;
-        padding: 10px 0px;
-        background-color: $primary-color;
-        @include media-up (md){
-            height: 450px;
-        }
-        @include media-up (xl){
-            height: 530px;
-        }
-    }
-    img{
-        height: 150px;
-    }
-    h5{
-        font-family: $primary-typography;
-        color: $text-color;
-        font-size: 18px;
-        @include media-up (md){
-            font-size: 20px;
-        }
-        @include media-up (xl){
-            font-size: 25px;
-        }
-    }
-    p{
-        font-family: $secondary-typography;
-        color: $text-color;
-        margin: 15px 0px;
-        @include media-up (md){
-            font-size: 12px;
-        }
-        @include media-up (xl){
-            font-size: 14px;
-        }
-    }
-    .btn-primary{
-        font-family: $secondary-typography;
-    }
+    
 }
 
 #index-4{
@@ -276,3 +269,4 @@
         }
     }
 }
+
