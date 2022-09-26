@@ -14,29 +14,32 @@
         margin-top: 85px;
         margin-bottom: 85px;
     }
-}
-img{
-    height: 150px;
-}
-h5{
-    font-family: $primary-typography;
-    color: $primary-color;
-    font-size: 18px;
-    @include media-up (md){
-        font-size: 20px;
+    img{
+        height: 150px;
     }
-    @include media-up (xl){
-        font-size: 25px;
+    .card-body{
+        .card-title{
+            font-family: $primary-typography;
+            color: $primary-color;
+            font-size: 18px;
+            @include media-up (md){
+                font-size: 20px;
+            }
+            @include media-up (xl){
+                font-size: 25px;
+            }
+        }
+        .card-text{
+            font-family: $secondary-typography;
+            color: $primary-color;
+            margin: 15px 0px;
+            @include media-up (md){
+                font-size: 12px;
+            }
+            @include media-up (xl){
+                font-size: 14px;
+            }
+        }
     }
 }
-p{
-    font-family: $secondary-typography;
-    color: $primary-color;
-    margin: 15px 0px;
-    @include media-up (md){
-        font-size: 12px;
-    }
-    @include media-up (xl){
-        font-size: 14px;
-    }
-}
+
