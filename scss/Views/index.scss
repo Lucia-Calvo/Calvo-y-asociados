@@ -81,7 +81,7 @@
         @include media-up(xl){
             width: fit-content;
             top: 18%;
-            right: 50%;
+            right: 53%;
         }
         H1{
             font-family: $primary-typography;
@@ -98,7 +98,7 @@
         color: $text-color;       
         position: absolute;
         top: 15%;
-        left: 30%;
+        left: 28%;
         @include media-up(sm){
             top: 17%;
         }
@@ -107,6 +107,7 @@
         }
         @include media-up(xl){
             top: 28%;
+            left: 30%;
         }
         H2{
             font-family: $primary-typography;

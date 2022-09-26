@@ -1,14 +1,100 @@
-.servicios-1{
+#servicios-1{
     background-color: $primary-color;
-    height: fit-content;
+    height: max-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px $text-color solid;
     article{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        background-color:$quaternary-color;
+        height: fit-content;
+        width: 85vw;
+        margin: 20px 0px;
+        border-radius: 8px;
+        border: 1px $text-color solid;
+        h4{
+            font-family: $primary-typography;
+            font-size: 16px;
+            color: $tertiary-color;
+            margin-top: 25px;
+            text-align: center;
+            @include media-up (md){
+                font-size: 18px;
+            }
+            @include media-up (xl){
+                font-size: 24px;
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 15px 10px;
+            color: $text-color;
+            p{
+                text-align: justify;
+                @include media-up (md){
+                    font-size: 14px;
+                }
+                @include media-up (xl){
+                    font-size: 18px;
+                }
+            }
+            h6{
+                color: $tertiary-color;
+                @include media-up (md){
+                    font-size: 14px;
+                }
+                @include media-up (xl){
+                    font-size: 18px;
+                }
+            }
+            ul{
+                li{
+                    font-size: 11px;
+                    @include media-up (md){
+                        font-size: 12px;
+                    }
+                    @include media-up (xl){
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#servicios-2{
+    background-color: $primary-color;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px $text-color solid;
+    @include media-up (sm){
+        height: 40vh;
+    }
+    @include media-up (md){
+        height: 45vh;
+    }
+    @include media-up (xl){
+        height: 70vh;
+    }
+    p{      
+        font-size: 20px;
+        font-family: $primary-typography;
+        color: $text-color;
+        text-align: center;
+        padding: 0px 10px;
+        @include media-up (md){
+            font-size: 24px;
+        }
+        @include media-up (xl){
+            font-size: 30px;
+        }
     }
 }
