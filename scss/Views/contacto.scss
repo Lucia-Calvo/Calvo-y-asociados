@@ -6,25 +6,49 @@
     @include media-up (sm){
         height: 100vh;
     }
-    h4{
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media-up (xl){
+        background-color: black;
+        height: 99vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }  
+       h1{
         color: $text-color;
         font-family: $primary-typography;
-        font-size: 20px;
-        padding: 25px 10px 10px;
-        @include media-up (xl){
-            padding: 35px 28px 10px;
-            font-size: 22px;
+        font-size: 60px;
+        @include media-up(xl){
+            font-size: 90px;
+            margin-left: 25px;
         }
-    }
-    p{
-        color: $text-color;
-        padding: 0px 10px 10px;
-        font-size: 14px;
-        @include media-up (xl){
-            padding: 0px 28px 10px;
+       }
+        h2{
+            color: $text-color;
+            font-family: $primary-typography;
+            font-size: 20px;
+            @include media-up (xl){
+                font-size: 30px;
+                margin-left: 25px;
+            }
+        }
+        p{
+            color: $text-color;
             font-size: 16px;
+            text-align: center;
+            margin-left: 8px;
+            margin-right: 8px;
+            @include media-up (xl){
+                font-size: 18px;
+                margin-left: 25px;
+            }
         }
     }
+    
     .form{
         display: flex;
         flex-direction:column;
@@ -34,6 +58,11 @@
         color: $text-color;
         @include media-up (md){
             align-items: flex-start;
+        }
+        @include media-up (xl){
+            position: absolute;
+            left: 60%;
+            bottom: 10%;
         }
         .textarea{
             width: 172px;

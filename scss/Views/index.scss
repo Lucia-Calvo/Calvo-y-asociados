@@ -75,11 +75,11 @@
     .container-1{
         color: $text-color;       
         letter-spacing: 1px;
-        position: absolute;
-        top: 10%;
-
+        position: relative;
+        top: 5%;
         @include media-up(xl){
             width: fit-content;
+            position: absolute;
             top: 18%;
             right: 53%;
         }
@@ -96,16 +96,14 @@
     }
     .container-2{
         color: $text-color;       
-        position: absolute;
-        top: 15%;
-        left: 28%;
-        @include media-up(sm){
-            top: 17%;
-        }
+        position: relative;
+        top: 5%;
         @include media-up(md){
+            position: absolute;
             top: 18%;
         }
         @include media-up(xl){
+            position: absolute;
             top: 28%;
             left: 30%;
         }
@@ -186,7 +184,7 @@
                 font-size: 20px;
             }
             @include media-up (xl){
-                font-size: 23px;
+                font-size: 30px;
             }
         }
         .Resultados{
@@ -197,7 +195,7 @@
                 font-size: 22px;
             }
             @include media-up (xl){
-                font-size: 25px;
+                font-size: 35px;
             }
         }    
     }
@@ -238,6 +236,9 @@
         flex-wrap: wrap;
         align-items: center;
     }
+    @include media-up(xl){
+        height: 110vh;
+    }
     .btn{
     position: absolute;
     bottom: 3px;
@@ -273,7 +274,7 @@
                 font-size: 14px;
             }
             @include media-up (xl){
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
