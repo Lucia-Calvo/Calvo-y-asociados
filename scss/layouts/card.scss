@@ -5,7 +5,9 @@
     margin-bottom: 45px;
     height: 2%;
     padding: 10px 0px;
-    background-color: $text-color;
+    background-color: $primary-color;
+    border: 1px $text-color solid;
+    border-radius: 8px;
     @include media-up (md){
         height: 450px;
     }
@@ -21,7 +23,7 @@
         height: 30%;
         .card-title{
             font-family: $primary-typography;
-            color: $primary-color;
+            color: $text-color;
             font-size: 18px;
             @include media-up (md){
                 font-size: 20px;
@@ -32,7 +34,7 @@
         }
         .card-text{
             font-family: $secondary-typography;
-            color: $primary-color;
+            color: $text-color;
             margin: 15px 0px;
             @include media-up (md){
                 font-size: 12px;
